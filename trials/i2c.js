@@ -1,7 +1,7 @@
 const i2c = require('i2c-bus');
  
-const ADDR = 0x5b;
-const TEMP_REG = 0x27;
+const ADDR = 0x5a;
+const TEMP_REG = 0x07;
 
 const toCelsius = (t) => {
 	return (t*0.02)-273.15;
@@ -23,7 +23,7 @@ const toCelsius = (t) => {
 	  });
 	});
 
- }, 300);
+ }, 100);
 
 
 ///64183
